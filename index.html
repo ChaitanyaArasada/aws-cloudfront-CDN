@@ -4,27 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AWS CloudFront Demo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: linear-gradient(to right, #232f3e, #ff9900);
-            color: white;
-            margin-top: 100px;
-        }
-        h1 {
-            font-size: 3rem;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-        .box {
-            background: rgba(0,0,0,0.4);
-            padding: 30px;
-            border-radius: 10px;
-            display: inline-block;
-        }
-    </style>
+
+    <!-- Linking external CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="box">
@@ -32,8 +14,10 @@
         <p>This content is delivered via AWS CloudFront.</p>
         <p>Origin: Amazon S3</p>
         <p>Status: Successfully cached and served</p>
+
         <br>
-        <a href="/nonexistent-page.html" style="color: yellow;">
+
+        <a href="/nonexistent-page.html">
             Test Error Page
         </a>
     </div>
